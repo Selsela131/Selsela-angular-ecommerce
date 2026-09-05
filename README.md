@@ -1,4 +1,4 @@
-# Selsela Suboori Store
+# Selsela Store
 
 Angular 21 ecommerce project with 14 products, 6 categories, category filtering, search, stock status, prices, cart counter and responsive boutique styling.
 
