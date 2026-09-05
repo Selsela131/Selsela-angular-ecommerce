@@ -1,0 +1,7 @@
+Selsela Suboori - Angular Ecommerce Project
+
+GitHub Repository URL:
+https://github.com/YOUR-USERNAME/Selsela-angular-ecommerce
+
+Vercel Application URL:
+https://YOUR-PROJECT.vercel.app
