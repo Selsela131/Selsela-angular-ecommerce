@@ -22,7 +22,7 @@ export class AppComponent{
     {id:'P014',name:'Glass Water Bottle',description:'Reusable glass bottle for everyday hydration.',price:17.95,imageUrl:'https://picsum.photos/seed/P014/700/500',inStock:false,category:'Wellness'}
  ];
  get categories():string[]{return ['All',...Array.from(new Set(this.products.map(p=>p.category)))];}
- get filteredProducts():Product[]{const t=this.searchTerm.trim().toLowerCase();return this.products.filter(p=>(this.selectedCategory==='All'||p.category===this.selectedCategory)&&(!t||(`${p.name} ${p.description} ${p.category}`).toLowerCase().includes(t))));}
+ get filteredProducts():Product[]{const t=this.searchTerm.trim().toLowerCase();return this.products.filter(p=>(this.selectedCategory==='All'||p.category===this.selectedCategory)&&(!t||`${p.name} ${p.description} ${p.category}`.toLowerCase().includes(t)));}
  chooseCategory(c:string):void{this.selectedCategory=c;}
  addToCart(p:Product):void{if(p.inStock)this.cartCount++;}
 }
